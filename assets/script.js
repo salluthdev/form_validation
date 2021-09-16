@@ -61,28 +61,3 @@ function setSuccessFor(input) {
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
-
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
-
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});
